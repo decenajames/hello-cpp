@@ -1,0 +1,10 @@
+all: hello
+
+hello.o: hello.cpp
+	g++ -c hello.cpp
+
+hello: hello.o
+	g++ -o hello hello.o
+
+clean:
+	rm -rf hello *.o
