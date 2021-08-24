@@ -1,6 +1,6 @@
 
 
-#include "greetings.cpp"
+#include "greetings.h"
 
 int main() {
     sayhello();

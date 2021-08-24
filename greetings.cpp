@@ -4,5 +4,10 @@
 using namespace std;
 
 void sayhello() {
-    cout << "Hello, World!\n" << endl;   
-}   
+    
+	for (int i = 1; 1<=10; ++i){
+	
+	cout << "Hello, World!\n" << endl;   
+	
+	}
+}    

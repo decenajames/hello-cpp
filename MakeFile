@@ -1,10 +1,17 @@
-all: hello
+all	: hello
+	
+greetings.o	: greetings.h greetings.cpp
+	g++ -c greetings.cpp 
+	
+main.o	: main.cpp
+	g++ -c main.cpp
 
-hello.o: hello.cpp
-	g++ -c hello.cpp
+hello	: greetings.o main.o 
+	g++ -o hello greetings.o main.o 
 
-hello: hello.o
-	g++ -o hello hello.o
+test	:  
+	
 
-clean:
-	rm -rf hello *.o
+clean	:
+	rm -f hello *.o
+	
